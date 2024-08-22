@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
-</head>
-<body>
-    
-    div
-
-    <button id="play-btn">play</button>
-    <button id="pause-btn">pause</button>
-    <button id="next-btn">next</button>
-
-    <script src="home.js"></script>
-</body>
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="img-div">
+        <img id="song-img" alt="song image"/>
+        <p id="songname"></p>
+        <p id="subtitle"></p>
+        <audio id="audio" controls autoplay loop>
+            Your browser does not support the audio element.
+        </audio>
+        <p id="description"></p>
+        <p id="credit"></p>
+      </div>
+      <div class="btn-div">
+        <button id="prev-btn"></button>
+        <button id="play-btn"></button>
+        <button id="next-btn"></button>
+      </div>
+    </div>
+    <script src="play.js"></script>
+  </body>
 </html>
