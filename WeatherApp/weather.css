@@ -24,21 +24,21 @@ body {
 }
 @keyframes bgcolors {
   0% {
-    background-color: rgb(158, 208, 255);
+    background-color: rgba(158, 208, 255, 0.722);
   }
   20% {
-    background-color: rgb(211, 255, 116);
+    background-color: rgba(211, 255, 116, 0.781);
   }
   40% {
-    background-color: rgb(212, 182, 255);
+    background-color: rgba(212, 182, 255, 0.734);
   }
   60% {
-    background-color: rgb(255, 180, 230);
+    background-color: rgba(255, 180, 230, 0.728);
   }
   80% {
-    background-color: rgb(255, 133, 147);
+    background-color: rgba(255, 133, 147, 0.651);
   }
   100% {
-    background-color: rgb(255, 158, 97);
+    background-color: rgba(255, 158, 97, 0.748);
   }
 }
