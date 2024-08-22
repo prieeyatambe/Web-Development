@@ -7,6 +7,8 @@ const descriptElement = document.getElementById("weatherCondition");
 const windElement = document.getElementById("windPre");
 const humiElement = document.getElementById("humidity");
 const iconElement = document.getElementById("weather-icon");
+const fahrenheitElement=document.getElementById('fahren')
+const pElement=document.getElementById('title');
 
 searchButton.addEventListener("click", function () {
   const apiKey = "687f5652c22b154f43c362fdbc507178";
@@ -15,21 +17,28 @@ searchButton.addEventListener("click", function () {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      var name = data.name;
-      var weatherDate = new Date(data.dt * 1000);
-      var temp = data.main.temp;
-      var des = data.weather[0].description;
-      var wind = data.wind.speed;
-      var humi = data.main.humidity;
-      var iconCode = data.weather[0].icon;
+      var name = data.name; //fetch city name
+      var weatherDate = new Date(data.dt * 1000);//fetch date and time
+      var temp = data.main.temp;  //fetch temperature
+      var des = data.weather[0].description;  //fetch weather description
+      var wind = data.wind.speed;   //fetch wind speed
+      var humi = data.main.humidity;  //fetch humidity
+      var iconCode = data.weather[0].icon;  ////fetch weather icon
       
       var iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;// open weeather map api provides icon image
 
-      cityElement.innerText = `Weather of ${name}`;
+      var fahrenheit=temp*9/5+32; //convert temperature to fahrenheit
+      
+      pElement.innerText='Weather of';
+
+      cityElement.innerText = `${name}`;
+      cityElement.style.color='black';
 
       timeElement.innerText = `${weatherDate}`;
 
       tempElement.innerText = `${Math.round(temp)}℃`;
+
+      fahrenheitElement.innerText=`${Math.round(fahrenheit)}°F`;
 
       descriptElement.innerText = `${des}`;
 
@@ -39,12 +48,15 @@ searchButton.addEventListener("click", function () {
 
       iconElement.src = iconUrl;
 
+      // to add wind icon
       const para1 = document.getElementById("windPre");
       para1.insertAdjacentHTML(
         "afterbegin",
         "<i class='bi bi-wind'></i>&nbsp;"
       );
 
+
+      //to add humidity icon
       const para2 = document.getElementById("humidity");
       para2.insertAdjacentHTML(
         "afterbegin",
