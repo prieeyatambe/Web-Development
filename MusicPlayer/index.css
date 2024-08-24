@@ -1,0 +1,177 @@
+body{
+    justify-content: center;
+    height: 100%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation-name: backgroundAnimation;
+    animation-duration: 20000ms;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#music-div{
+    background-color: rgba(0, 0, 0, 0.267);
+    border-radius: 5%;
+    width: 50%;
+    height: 100%;
+    padding: 1%;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.413);
+    backdrop-filter: blur(10%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-top: 5%;
+    transition: transform 0.34s;
+    animation-name: borderTheme;
+    animation-duration: 10000ms;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#music-div:hover{
+   transform: scale(1.05); 
+}
+h1{
+    font-size: 2vw;
+    color: rgb(254, 254, 254);
+    padding: 2%;
+}
+
+.album-cover{
+    position: relative;
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+#album-pic{
+    position: relative;
+    padding: 5%;
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    animation-name: borderTheme;
+    animation-duration: 10000ms;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes borderTheme {
+    
+    0%{
+        border-color: rgb(255, 192, 192);
+        box-shadow: 0 0 15px pink ;
+    }
+    20%{
+        border-color: rgb(248, 165, 105);
+        box-shadow: 0 0 15px 3px  rgb(248, 165, 105) ;
+    }
+    30%{
+        border-color:rgb(255, 255, 119) ;
+        box-shadow: 0 0 15px 3px rgb(255, 255, 119) ;
+    }
+    40%{
+        border-color: rgb(115, 253, 115);
+        box-shadow: 0 0 15px 3px rgb(115, 253, 115) ;
+    }
+    50%{
+        border-color: rgb(140, 160, 237);
+        box-shadow: 0 0 15px 3px rgb(140, 160, 237) ;
+    }
+    60%{
+        border-color: rgb(158, 105, 232);
+        box-shadow: 0 0 15px 3px rgb(158, 105, 232) ;
+    }
+    70%{
+        border-color: rgb(233, 136, 218);
+        box-shadow: 0 0 15px 3px violet ;
+    }
+    80%{
+        border-color: rgb(255, 138, 161);
+        box-shadow: 0 0 15px 3px rgb(255, 138, 161) ;
+    }
+    90%{
+        border-color: rgb(198, 140, 237);
+        box-shadow: 0 0 15px 3px rgb(198, 140, 237) ;
+    }
+    100%{
+        border-color: rgb(234, 126, 204);
+        box-shadow: 0 0 15px 3px rgb(234, 126, 204) ;
+    }
+}
+#controls{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20%;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    font-size: 2vw;
+    color: rgb(114, 255, 255);
+    cursor: pointer;
+    border-radius: 5%;
+    transition: background 0.2s;
+    margin-top: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+button:hover{
+    background: rgba(255, 255, 255, 0.317);
+    color: black;
+}
+
+#song-name{
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    
+}
+footer > h3{
+    margin-top: 2%;
+    text-align: center;
+}
+
+
+@keyframes backgroundAnimation{
+    0%{
+        background-image:url("Resource/images/background3.webp") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    25%{
+        background-image:url("Resource/images/background4.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background-image:url("Resource/images/background5.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background-image:url("Resource/images/background6.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background-image:url("Resource/images/background7.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
