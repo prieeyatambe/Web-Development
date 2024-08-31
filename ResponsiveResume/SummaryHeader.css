@@ -1,0 +1,46 @@
+/* style for career summary*/
+#summary{
+    background-image:linear-gradient( to left, black, rgb(103, 33, 103),rgb(39, 39, 124));
+    color: rgb(255, 255, 255);
+    height: 500px;
+    width: 100%;
+    margin-top: 0%;
+    display: flex;
+    transition: transform 100ms ease-in;
+    border-radius: 13px;
+}
+#summary-para{
+    width: 45%;
+    height: 30%;
+    padding-top: 4%;
+    padding-left: 5%;
+    line-height:1.5vw ;
+    font-size: 1.09vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*image id style*/
+#image{
+    margin-top: 6%;
+    margin-left: 50%;
+    border-radius: 80%;
+    height: 90%;
+    width: 100%;
+    opacity: 0.88;
+    border: 5% inset transparent;
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.929);
+    opacity: 0.3;
+    transition: opacity 200ms;
+}
+#summary:hover{
+    transform: scale(1.006);
+}
+#image:hover{
+    opacity: 0.89;
+}
+/* style for links*/
+#heading{
+    font-family: 'Beau Rivage','Baumans','Anek Tamil',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3vw;
+}
+
+
