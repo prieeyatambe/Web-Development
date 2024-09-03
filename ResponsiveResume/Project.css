@@ -1,7 +1,10 @@
 
 #projects{
-    background-color: rgb(32, 82, 125) ;
+    background-image:linear-gradient( to left, black,rgb(79, 19, 79),rgb(29, 90, 95));
     height: 500px;
     width: 100%;
-    margin-top: 1%;
+    margin-top: 0%;
+}
+#projects:hover{
+    transform: scale(1.006);
 }

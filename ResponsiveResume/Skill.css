@@ -1,6 +1,6 @@
 #skills{
-    background-color: rgb(40, 137, 137);
+    background-image:linear-gradient( to right, black,  rgb(40, 137, 137),rgb(155, 159, 25));
     height: 500px;
     width: 100%;
-    margin-top: 1%;
+    margin-top: 0%;
 }

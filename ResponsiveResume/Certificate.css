@@ -1,6 +1,6 @@
 #certificate{
-    background-color: rgb(144, 255, 33);
-    height: 100%;
+    background-image:linear-gradient( to left, black,rgb(52, 12, 83),rgb(126, 0, 78));
+    height: 500px;
     width: 100%;
-    margin-top: 1%;
+    margin-top: 0%;
 }
