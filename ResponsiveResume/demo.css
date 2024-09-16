@@ -6,19 +6,16 @@
     margin-top: 0%;
     padding-top: 2%;
 }
-#projects:hover{
-    transform: scale(1.006);
-}
 #project{
-    background-color: rgb(216, 216, 216);
-    width: 18%;
+    background-color: beige;
+    width: 19%;
     height:25%;
     margin-left: 2%;
     border-radius: 3%;
     padding: 1%;
-    margin-top: 0%;
+    margin-top: 1%;
     margin-bottom: 1%;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.658);
+    box-shadow: 2px 3px 7px rgba(255, 255, 255, 0.658);
 }
 #project:hover{
     transform: scale(1.08);
@@ -43,5 +40,23 @@
 #project-div{
     display: flex;
     flex-wrap: wrap;
-    padding: 1% 4%;
+    padding: 1%;
+}
+.upArrow{
+    color: white;
+    width: 2%;
+    height: 5%;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 1%;
+    border-color: transparent;
+}
+.upArrow:hover{
+    background-color: rgba(159, 159, 159, 0.735);
+}
+.upArrow  a:hover{
+    color: black;
+}
+.btn-div{
+   padding: 0.7%;
 }

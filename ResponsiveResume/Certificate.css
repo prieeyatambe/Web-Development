@@ -4,3 +4,22 @@
     width: 100%;
     margin-top: 0%;
 }
+#certificate:hover{
+    transform: scale(1.006);
+}
+.certificateDiv{
+    padding-left: 8%;
+    line-height: 35px;
+    margin-top: 2%;
+    color: white;
+    font-size: 2vw;
+}
+.certificateDiv > a{
+    color: whitesmoke;
+    font-family:'Anek Tamil', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+.certificateDiv > a:hover{
+    color: rgb(255, 3, 179);
+}

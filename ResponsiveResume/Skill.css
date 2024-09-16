@@ -1,6 +1,60 @@
 #skills{
-    background-image:linear-gradient( to right, black,  rgb(40, 137, 137),rgb(155, 159, 25));
+    background-image:linear-gradient( to right, black,  rgb(31, 21, 120),rgb(108, 27, 87));
     height: 500px;
     width: 100%;
     margin-top: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+#skills:hover{
+    transform: scale(1.006);
+}
+.skillDiv{
+    color: whitesmoke;
+    padding-top: 1%;
+    padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+.skillDiv ul > li{
+    list-style: none;
+}
+#pl{
+    padding-right: 2%;
+}
+#pl > p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4rem;
+    background-color: transparent;
+    padding:5px;
+    border-radius: 5px;
+    color: whitesmoke;
+    border: 3px solid black;
+    animation-name: borderColor;
+    animation-duration: 3s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+#pl > #plDiv{
+    padding-left: 10%;
+    transition: font-size 100ms ease;
+}
+#pl > #plDiv:hover{
+    font-size: 1.2vw;
+}
+/* animation for border*/
+@keyframes borderColor {
+    0%{
+        border-color: violet;
+    }
+    50%{
+        border-color: yellowgreen;
+    }
+    100%{
+        border-color: crimson ;
+    }
+}
+
+
